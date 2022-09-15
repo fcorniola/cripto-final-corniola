@@ -1,0 +1,30 @@
+.tareas{
+    th{
+        @include texto ($color: black, $size: 1.5rem, $peso: bolder);
+    }
+    td{
+        @include texto ($color: white, $size: 1.3rem, $peso: bolder);
+        a{
+            text-decoration: none;
+            color: aquamarine;
+            &:hover{
+                background-color: aquamarine;
+                border-radius: 10%;
+                color: black;
+                zoom: 1.1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .tareas{
+        th{
+            @include texto ($color: black, $size: 1.2rem, $peso: bolder);
+        }
+        td{
+            @include texto ($color: white, $size: 1rem, $peso: bolder);
+        }
+    }
+}
+

@@ -1,0 +1,34 @@
+.contacto{
+    @include texto ($color: black, $size: 1rem);
+    margin-left: 5%;
+    margin-right: 5%;
+    div{
+        label{
+            @include texto ($color: white, $size: 1.3rem);
+            input{
+                @include texto ($size: 1rem);
+            }
+        }
+        button{
+            @include texto ($color:black, $size: 1.5rem);
+            opacity: 0.8;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .contacto{
+        @include texto ($color: black, $size: 1rem);
+        div{
+            label{
+                @include texto ($color: white, $size: 1rem);
+                input{
+                    @include texto ($size: 1rem);
+                }
+            }
+            button{
+                @include texto ($color:black, $size: 1rem);
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+@mixin texto ($color: aquamarine, $size, $peso: bold, $centro: center){
+    color: $color;
+    font-size: $size;
+    font-weight: $peso;
+    text-align: $centro;
+}

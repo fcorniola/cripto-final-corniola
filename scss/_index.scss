@@ -1,0 +1,13 @@
+div{
+    text-align: center;
+    p{
+        @include texto ($color: white ,$size: 1.2rem);
+    }
+    li{
+        @include texto ($color: white ,$size: 1.2rem);
+        list-style: none;
+    }
+}
+.gif{
+    opacity: 0.6;
+}

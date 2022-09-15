@@ -1,0 +1,16 @@
+footer{
+    border-bottom: solid 2px aquamarine;
+    border-top: solid 2px aquamarine;
+    div{
+        align-items: center;
+        p{
+            @include texto ($size: 1.2rem);
+        }
+        .icono {
+            font-size: 50px;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,54 @@
+header {
+    border-bottom: solid 2px aquamarine;
+    border-top: solid 2px aquamarine;
+    h1 {
+        @include texto ($size: 3rem);
+        margin-left: 50px;
+        letter-spacing: 10px;
+    }
+    .menu li :hover {
+        @include texto ($color: black, $size: 1.7rem);
+        background-color: aquamarine;
+        border-radius: 15px;
+    }
+    .menu a{
+        @include texto ($size: 1.5rem);
+    }
+}
+
+@media screen and (max-width: 576px){
+    header {
+        h1 {
+            @include texto ($size: 1.5rem);
+            margin-left: 30px;
+            letter-spacing: 7px;
+        }
+        .menu li :hover {
+            @include texto ($color: black, $size: 1rem);
+            border-radius: 5px;
+        }
+        .menu a{
+            @include texto ($size: 1rem);
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    header {
+        h1 {
+            @include texto ($size: 2rem);
+            margin-left: 30px;
+            letter-spacing: 7px;
+        }
+        .menu li :hover {
+            @include texto ($color: black, $size: 1.2rem);
+            border-radius: 5px;
+        }
+        .menu a{
+            @include texto ($size: 1.2rem);
+        }
+    }
+}
+
+
+
